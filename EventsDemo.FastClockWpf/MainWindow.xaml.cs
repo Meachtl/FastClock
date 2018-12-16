@@ -21,10 +21,20 @@ namespace EventsDemo.FastClockWpf
 
         private void ButtonSetTime_Click(object sender, RoutedEventArgs e)
         {
+            DateTime date = (DateTime)(DatePickerDate.SelectedDate);
+            DateTime time = DateTime.Parse(TextBlockTime.Text);
+
+
+
+            DatePickerDate.SelectedDate = new DateTime(2015, 07, 17);
+            TextBoxTime.Text = (new DateTime(2015, 07, 17, 12, 34, 00).ToShortTimeString());
+
+            SetFastClockStartDateAndTime();
         }
 
         private void SetFastClockStartDateAndTime()
         {
+
         }
 
         private void FastClockOneMinuteIsOver(object sender, DateTime fastClockTime)
