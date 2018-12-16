@@ -1,0 +1,6 @@
+C:\HTL\5_6_Semester\POS_5\13\FastClock mit Events\FastClockTemplate\EventsDemo.FastClock\bin\Debug\EventsDemo.FastClock.dll
+C:\HTL\5_6_Semester\POS_5\13\FastClock mit Events\FastClockTemplate\EventsDemo.FastClock\bin\Debug\EventsDemo.FastClock.pdb
+C:\HTL\5_6_Semester\POS_5\13\FastClock mit Events\FastClockTemplate\EventsDemo.FastClock\obj\Debug\EventsDemo.FastClock.csprojAssemblyReference.cache
+C:\HTL\5_6_Semester\POS_5\13\FastClock mit Events\FastClockTemplate\EventsDemo.FastClock\obj\Debug\EventsDemo.FastClock.csproj.CoreCompileInputs.cache
+C:\HTL\5_6_Semester\POS_5\13\FastClock mit Events\FastClockTemplate\EventsDemo.FastClock\obj\Debug\EventsDemo.FastClock.dll
+C:\HTL\5_6_Semester\POS_5\13\FastClock mit Events\FastClockTemplate\EventsDemo.FastClock\obj\Debug\EventsDemo.FastClock.pdb
