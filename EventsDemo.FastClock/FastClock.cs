@@ -55,30 +55,19 @@ namespace EventsDemo.FastClock
             _dispatcherTimer = new DispatcherTimer();
 
             _dispatcherTimer.Tick += Timer_Tick;
-            //_instance.OneMinuteIsOver += OnOneMinuteIsOver;
         }
-
-
         #endregion
 
-        //private void OnOneMinuteIsOver(object sender, DateTime time)
-        //{
-        //    //while (IsRunning)
-        //    //{
-        //    //    OneMinuteIsOver?.Invoke(this, time);
-        //    //}
-        //}
-
+        #region Methods
         private void Timer_Tick(object sender, EventArgs args)
         {
             Time = Time.AddMinutes(1);
             OneMinuteIsOver?.Invoke(this, Time);
-
-            //_dispatcherTimer.Interval = new TimeSpan(0, 0, Factor);
-            //_dispatcherTimer.Start();
         }
+        #endregion
 
+        #region Events
         public event EventHandler<DateTime> OneMinuteIsOver;
-
+        #endregion
     }
 }

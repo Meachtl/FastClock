@@ -12,7 +12,6 @@ namespace EventsDemo.FastClockWpf
         {
             InitializeComponent();
             FastClock.FastClock.Instance.OneMinuteIsOver += FastClockOneMinuteIsOver;
-
         }
 
         private void MetroWindow_Initialized(object sender, EventArgs e)
@@ -23,23 +22,14 @@ namespace EventsDemo.FastClockWpf
 
         private void ButtonSetTime_Click(object sender, RoutedEventArgs e)
         {
-            
-
-            //DatePickerDate.SelectedDate = new DateTime(2015, 07, 17);
-            //TextBoxTime.Text = (new DateTime(2015, 07, 17, 12, 34, 00).ToShortTimeString());
-
             SetFastClockStartDateAndTime();
         }
 
         private void SetFastClockStartDateAndTime()
         {
-            //DateTime date = (DateTime)(DatePickerDate.SelectedDate);
-            //DateTime time = DateTime.Parse(TextBlockTime.Text);
-
             TextBlockDate.Text = DatePickerDate.Text;
             TextBlockTime.Text = TextBoxTime.Text;
             FastClock.FastClock.Instance.Time = DateTime.Parse(DatePickerDate.Text + " " + TextBoxTime.Text);
-
         }
 
         private void FastClockOneMinuteIsOver(object sender, DateTime fastClockTime)
@@ -57,11 +47,8 @@ namespace EventsDemo.FastClockWpf
 
             if (CheckBoxClockRuns.IsChecked.Value)
             {
-                //SliderFactor.IsEnabled = false;
-
                 int.TryParse(TextBoxFactor.Text, out int factor);
                 FastClock.FastClock.Instance.Factor = factor;
-
                 FastClock.FastClock.Instance.IsRunning = true;
             }
             else
@@ -76,7 +63,5 @@ namespace EventsDemo.FastClockWpf
             digitalClock.Owner = this;
             digitalClock.Show();
         }
-
-       
     }
 }

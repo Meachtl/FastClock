@@ -9,16 +9,13 @@ namespace EventsDemo.FastClockWpf
     {
         private void UpdateTime(object sender, DateTime time)
         {
-
             TextBlockClock.Text = FastClock.FastClock.Instance.Time.ToShortTimeString();
         }
 
         public DigitalClock()
         {
-            InitializeComponent();
-            
+            InitializeComponent();            
             FastClock.FastClock.Instance.OneMinuteIsOver += UpdateTime;
-
             UpdateTime(this, FastClock.FastClock.Instance.Time);
         }
 
